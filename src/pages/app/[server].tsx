@@ -884,7 +884,7 @@ if(currentSection ==="search"){
         let bab = [
             playlist
         ]
-        playlists.filter(pl => pl.label !== "Liked Song").forEach(pl => {
+        playlists.filter(pl => pl.id !== "liked-songs").forEach(pl => {
             bab.push(pl)
         })
         await setPlaylists(bab)
