@@ -278,7 +278,7 @@ const SocketHandler = (req, res) => {
 
                if (data.action === "pl_play") {
                   let b = { name: data.name, user: data.user }
-                  fetch(`${data.server.url}/play_pl?serverId=${servId}&shard=${found_socket ? found_socket.shard : `${_sockets.find(s => s.id === socket.id)?.shard}`}`, {
+                  fetch(`${data.server.url}/play_pl?serverId=${servId}&shardId=${found_socket ? found_socket.shard : `${_sockets.find(s => s.id === socket.id)?.shard}`}`, {
                      method: "post",
                      body: JSON.stringify(b),
                      headers: { 'Content-Type': 'application/json' }
