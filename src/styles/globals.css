@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .divider {
+        @apply my-4 h-1 mx-12 bg-green border-green;
+    }
+}
