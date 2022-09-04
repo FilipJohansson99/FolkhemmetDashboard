@@ -142,7 +142,7 @@ const SocketHandler = (req, res) => {
                         data: { current: data.current, paused: data.current.paused, loop: data.current.loop }
                      } })
                   }
-                  return res.send({ done: true })
+                 
                   return
                }
                if (data.action === "jump") {
